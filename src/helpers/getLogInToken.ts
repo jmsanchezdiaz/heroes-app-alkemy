@@ -9,7 +9,7 @@ export const getLogInToken = async (userValues: FormValues) => {
     );
     const response = req.data;
     return response;
-  } catch (err) {
-    throw new Error("Usuario Incorrecto");
+  } catch (err: any) {
+    throw new Error(err);
   }
 };
