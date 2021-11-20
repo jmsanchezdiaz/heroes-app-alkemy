@@ -12,7 +12,6 @@ export const getLogInToken = (userValues: FormValues) => {
 
   if (emailMatch && passwordMatch) {
     const token = getUniqueToken();
-    console.log(token);
     return Promise.resolve(token);
   }
 
