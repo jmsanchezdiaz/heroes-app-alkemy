@@ -1,5 +1,6 @@
 import { Formik, Field, Form } from "formik";
 import { useState } from "react";
+import { useAlert } from "react-alert";
 import { useNavigate } from "react-router";
 import useSpreadContext from "../../customHooks/useSpreadContext";
 import { getLogInToken } from "../../helpers/getLogInToken";
@@ -9,6 +10,7 @@ const LoginScreen = () => {
   const [wrongUser, setWrongUser] = useState<boolean>(false);
   const { logIn } = useSpreadContext();
   const navigate = useNavigate();
+  const alert = useAlert();
 
   const validate = (values: FormValues): Errors => {
     const errors = {} as Errors;
@@ -44,6 +46,7 @@ const LoginScreen = () => {
       })
       .catch((err) => {
         console.error(err);
+        alert.error("LogIn error, please see the console for more info ");
         setWrongUser(true);
       });
   };
