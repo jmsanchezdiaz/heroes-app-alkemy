@@ -1,0 +1,2 @@
+.container{max-width:80%;margin:auto}.loader{margin:auto;border-radius:50%;border:solid rgba(0,0,0,.1);border-left:solid #09f;-webkit-animation:spin ease infinite;animation:spin ease infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.c8baf0e2.chunk.css.map */

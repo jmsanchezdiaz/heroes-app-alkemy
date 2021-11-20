@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/heroes-app-alkemy/static/css/main.c8baf0e2.chunk.css",
+    "main.js": "/heroes-app-alkemy/static/js/main.f359f118.chunk.js",
+    "main.js.map": "/heroes-app-alkemy/static/js/main.f359f118.chunk.js.map",
+    "runtime-main.js": "/heroes-app-alkemy/static/js/runtime-main.90dc5778.js",
+    "runtime-main.js.map": "/heroes-app-alkemy/static/js/runtime-main.90dc5778.js.map",
+    "static/css/2.8c0e6b67.chunk.css": "/heroes-app-alkemy/static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.5a357f0c.chunk.js": "/heroes-app-alkemy/static/js/2.5a357f0c.chunk.js",
+    "static/js/2.5a357f0c.chunk.js.map": "/heroes-app-alkemy/static/js/2.5a357f0c.chunk.js.map",
+    "index.html": "/heroes-app-alkemy/index.html",
+    "static/css/2.8c0e6b67.chunk.css.map": "/heroes-app-alkemy/static/css/2.8c0e6b67.chunk.css.map",
+    "static/css/main.c8baf0e2.chunk.css.map": "/heroes-app-alkemy/static/css/main.c8baf0e2.chunk.css.map",
+    "static/js/2.5a357f0c.chunk.js.LICENSE.txt": "/heroes-app-alkemy/static/js/2.5a357f0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90dc5778.js",
+    "static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.5a357f0c.chunk.js",
+    "static/css/main.c8baf0e2.chunk.css",
+    "static/js/main.f359f118.chunk.js"
+  ]
+}
