@@ -1,0 +1,24 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.loader {
+  margin: auto;
+  border: solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 50%;
+  border-left-color: #09f;
+
+  animation: spin ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

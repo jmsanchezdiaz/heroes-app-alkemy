@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AuthProvider } from "./authProvider/AuthProvider";
+import { HeroesProvider } from "./heroesProvider/HeroesProvider";
+import AppRouter from "./router/AppRouter";
+import { positions, Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 function App() {
+  const options = {
+    timeout: 5000,
+    position: positions.TOP_CENTER,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <HeroesProvider>
+        <AlertProvider template={AlertTemplate} {...options}>
+          <AppRouter />
+        </AlertProvider>
+      </HeroesProvider>
+    </AuthProvider>
   );
 }
 

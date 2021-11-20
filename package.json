@@ -1,5 +1,6 @@
 {
   "name": "heroes-app-alkemy",
+  "homepage": "http://jmsanchezdiaz.github.io/heroes-app-alkemy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,11 +9,17 @@
     "@testing-library/user-event": "^12.8.3",
     "@types/jest": "^26.0.24",
     "@types/node": "^12.20.36",
-    "@types/react": "^17.0.34",
-    "@types/react-dom": "^17.0.11",
+    "@types/react-router": "^5.1.17",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.0",
     "react-scripts": "4.0.3",
+    "sass": "^1.43.4",
     "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
   },
@@ -20,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.34",
+    "@types/react-alert": "^5.2.1",
+    "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3"
   }
 }
