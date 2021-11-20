@@ -1,5 +1,5 @@
 import { Formik, Field, Form } from "formik";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAlert } from "react-alert";
 import { useNavigate } from "react-router";
 import useSpreadContext from "../../customHooks/useSpreadContext";
@@ -37,7 +37,7 @@ const LoginScreen = () => {
 
   const handleSubmit = (values: FormValues) => {
     getLogInToken(values)
-      .then(({ token }) => {
+      .then((token) => {
         if (token) {
           logIn(token);
           setWrongUser(false);
@@ -50,6 +50,11 @@ const LoginScreen = () => {
         setWrongUser(true);
       });
   };
+
+  useEffect(() => {
+    const ac = new AbortController();
+    return () => ac.abort();
+  }, []);
 
   return (
     <div className="bg-danger vh-100 w-100 text-white d-flex justify-content-md-evenly justify-content-center align-items-center flex-column flex-md-row">

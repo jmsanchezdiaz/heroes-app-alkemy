@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useAlert } from "react-alert";
 import { useParams } from "react-router";
 import Loader from "../../components/Loader/Loader";
 import { getHeroById } from "../../helpers/getHeroById";
@@ -8,13 +9,19 @@ const HeroDetailScreen = () => {
   const { id = "1" } = useParams();
   const [hero, setHero] = useState<Hero>();
   const isMountedRef = useRef(true);
+  const alert = useAlert();
 
   useEffect(() => {
-    getHeroById(id).then((heroResponse) => {
-      if (isMountedRef.current && heroResponse) {
-        setHero(heroResponse);
-      }
-    });
+    getHeroById(id)
+      .then((heroResponse) => {
+        if (isMountedRef.current && heroResponse) {
+          setHero(heroResponse);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        alert.error("An error occurred, more info in the browser console");
+      });
 
     return () => {
       isMountedRef.current = false;
