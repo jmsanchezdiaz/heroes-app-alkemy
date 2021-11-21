@@ -21,7 +21,7 @@ const SearchResults: React.FC<props> = ({
   const areExistingResults: boolean = filtered?.length > 0;
 
   return (
-    <div className="container">
+    <>
       <section className="row justify-content-center m-2">
         {filtered?.map((hero) => (
           <HeroItem key={hero.id} hero={hero} />
@@ -35,7 +35,7 @@ const SearchResults: React.FC<props> = ({
           amountOfPages={amountOfPages}
         />
       )}
-    </div>
+    </>
   );
 };
 

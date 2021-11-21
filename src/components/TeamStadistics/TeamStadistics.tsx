@@ -85,7 +85,7 @@ const TeamStadistics: React.FC<props> = ({ actualTeam, updateSpeciality }) => {
         <div>
           <h4 className="m-2">POWERSTATS</h4>
 
-          <div className="d-flex flex-wrap justify-content-center m-2">
+          <div className="d-flex flex-wrap justify-content-center m-2 align-items-center">
             {Object.entries(teamStats)?.map(([stat, val]) => {
               let parseValue = parseInt(val) ? val : "0";
               return (

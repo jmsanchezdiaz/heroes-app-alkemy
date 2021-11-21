@@ -57,7 +57,7 @@ const LoginScreen = () => {
   }, []);
 
   return (
-    <div className="bg-danger vh-100 w-100 text-white d-flex justify-content-md-evenly justify-content-center align-items-center flex-column flex-md-row">
+    <div className="bg-danger min-vh-100  text-white d-flex justify-content-md-evenly justify-content-center align-items-center flex-column flex-md-row">
       <article className="text-center  mb-2">
         <h1 className="fw-bold">Welcome to my Heroes App</h1>
         <h3 className="fw-light">Please Log In</h3>
