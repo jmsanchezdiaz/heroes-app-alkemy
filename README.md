@@ -8,10 +8,13 @@ En esta aplicación aprendí a usar Formik para la validación de formularios, B
 
 ## Tecnologias Utilizadas.
 
-- React JS
-- Typescript
-- Bootstrap
-- Formik
-- React Router v6
-- React Alert
-- Github Pages (Para deployear)
+- **React JS**
+- **Typescript**
+- **Bootstrap**
+- **Formik**
+- **React Router v6**
+- **React Alert**
+- **Github Pages (Para deployear)**
+
+
+# [**Sitio Web**](https://jmsanchezdiaz.github.io/heroes-app-alkemy/)
