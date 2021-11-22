@@ -16,5 +16,10 @@ En esta aplicación aprendí a usar Formik para la validación de formularios, B
 - **React Alert**
 - **Github Pages (Para deployear)**
 
+### Usuario Para Ingresar
+**Email: challenge@alkemy.org**
+<br/>
+**Password: react**
+
 
 # [**Sitio Web**](https://jmsanchezdiaz.github.io/heroes-app-alkemy/)
