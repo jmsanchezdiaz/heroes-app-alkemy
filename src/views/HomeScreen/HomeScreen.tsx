@@ -14,7 +14,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <section className="container text-center my-3">
+    <section style={{ maxWidth: "95%" }} className=" text-center m-auto">
       <div>
         <h3 className="text-danger fw-bold">ACTUAL TEAM</h3>
         <h6 className="text-danger fw-bold text-uppercase">
