@@ -14,7 +14,7 @@ const SearchScreen = () => {
   const [results, setResults] = useState<Hero[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const { filtered, goPrevPage, goNextPage, pageNumber, amountOfPages } =
-    usePagination(results, 10);
+    usePagination(results, 12);
 
   const validate = (value: string): ErrorMessage => {
     if (!value) return "Input Required";

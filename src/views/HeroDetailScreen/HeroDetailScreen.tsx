@@ -26,7 +26,7 @@ const HeroDetailScreen = () => {
     return () => {
       isMountedRef.current = false;
     };
-  }, [id]);
+  }, [id, alert]);
 
   return (
     <section

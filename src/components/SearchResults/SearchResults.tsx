@@ -1,6 +1,7 @@
 import React from "react";
 import { Hero } from "../../types/types";
-import HeroItem from "../HeroItem/HeroItem";
+import HeroCard from "../HeroCard/HeroCard";
+
 import SearchPaginationControls from "../SearchPaginationControls/SearchPaginationControls";
 
 interface props {
@@ -22,9 +23,9 @@ const SearchResults: React.FC<props> = ({
 
   return (
     <>
-      <section className="row justify-content-center m-2">
+      <section className="justify-content-center  d-flex flex-wrap m-auto">
         {filtered?.map((hero) => (
-          <HeroItem key={hero.id} hero={hero} />
+          <HeroCard key={hero.id} hero={hero} isSearchItem={true} />
         ))}
       </section>
       {areExistingResults && (
