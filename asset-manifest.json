@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/heroes-app-alkemy/static/css/main.c8baf0e2.chunk.css",
-    "main.js": "/heroes-app-alkemy/static/js/main.f6f18db0.chunk.js",
-    "main.js.map": "/heroes-app-alkemy/static/js/main.f6f18db0.chunk.js.map",
+    "main.js": "/heroes-app-alkemy/static/js/main.78c03188.chunk.js",
+    "main.js.map": "/heroes-app-alkemy/static/js/main.78c03188.chunk.js.map",
     "runtime-main.js": "/heroes-app-alkemy/static/js/runtime-main.90dc5778.js",
     "runtime-main.js.map": "/heroes-app-alkemy/static/js/runtime-main.90dc5778.js.map",
     "static/css/2.8c0e6b67.chunk.css": "/heroes-app-alkemy/static/css/2.8c0e6b67.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.8c0e6b67.chunk.css",
     "static/js/2.d559477c.chunk.js",
     "static/css/main.c8baf0e2.chunk.css",
-    "static/js/main.f6f18db0.chunk.js"
+    "static/js/main.78c03188.chunk.js"
   ]
 }
